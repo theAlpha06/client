@@ -1,0 +1,195 @@
+.team .items {
+  transition: 0.5s;
+}
+.team .img {
+  position: relative;
+}
+.team img {
+  height: 30vh;
+}
+
+
+.items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #000;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.overlay i {
+  background-color: #000;
+  color: #fff;
+  margin: 5px;
+  transition: 0.5s;
+}
+.team .details {
+  padding: 30px;
+  height: 26vh;  
+  text-align: center;
+}
+.team .details h2 {
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.team .details p {
+  font-size: 0.9rem;
+  color: grey;
+  position: relative;
+  transition: 0.5s;
+  line-height: 1.2rem;
+}
+.team .items:hover {
+  background-color: #3491B2;
+  transform: scale(1.1);
+  color: #fff;
+  cursor: pointer;
+  .buttonprice a button{
+    background-color: white;
+    color: black;
+  }
+  
+}
+.price{
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  right: 1.5rem;
+  font-weight: 700;
+  color: rgb(0, 255, 98);
+}
+.team .items:hover p {
+  color: #fff;
+}
+.team .items:hover .overlay {
+  opacity: 1;
+}
+.team .items:hover .overlay i:hover {
+  background-color: #3491B2;
+  color: #fff;
+}
+
+.price h6 i{
+  color: #000;
+}
+.buttonprice{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.buttonprice a button{
+  background-color: #3491B2;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+
+
+@media screen and (max-width: 450px){
+  .shadow{
+    align-items: center;
+    width: 80vw;
+  }
+  
+}
+.flip-box{
+  position: relative;
+}
+
+@media screen and (max-width: 450px) {
+  .team .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Align items at the center */
+    text-align: center; /* Center text content */
+    width: 80vw; /* Adjust width */
+    margin: auto; /* Center horizontally */
+  }
+  
+  
+  .faq-image-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .team .details {
+    padding: 20px; /* Adjust padding */
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .team .img img {
+    height: auto; /* Allow image height to adjust dynamically */
+    max-width: 100%; /* Ensure image does not overflow container */
+  }
+
+  .price {
+    position: static; /* Remove absolute positioning */
+    margin-top: 10px; /* Adjust margin */
+    font-size: 1.2rem; /* Adjust font size */
+    text-align: center; /* Center price */
+  }
+
+  .overlay {
+    bottom: auto; /* Remove absolute positioning */
+    padding: 10px; /* Adjust padding */
+  }
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+  .team{
+    padding-top:30vh;
+  }
+}
+
+
+
+/* 
+.flip-box {
+  background-color: transparent;
+  border: 1px solid #3491B2;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  transform: rotateY(180deg);
+} */

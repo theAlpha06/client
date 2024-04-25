@@ -1,0 +1,99 @@
+.faq-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.faq-image-container {
+  margin-right: 20px;
+}
+
+.faq-image {
+  width: 40vw; /* Adjust size as needed */
+  height: 80vh; /* Adjust size as needed */
+  border-radius: 10px;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.faq-content-container {
+  flex-grow: 1;
+}
+.faq{
+  display: flex;
+}
+
+.faq .container {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.faq-item {
+  margin: 1rem 0;
+  border-radius: 20px;
+  /* width: 50vw; */
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.accordion {
+  width: 50vw;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.faq .accordion:hover {
+  background-color: #3491b2;
+  color: #fff;
+}
+
+.faq h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.faq-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.faq p {
+  padding: 20px;
+  margin: 0;
+}
+
+.text {
+  padding: 0 20px 20px 20px;
+}
+
+@media screen and (max-width: 800px){
+  .faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .contentfaq {
+    width: 90vw; /* Set width of container to 90vw on mobile view */
+  }
+  .accordion{
+    width: 80vw;
+  }
+  .faq-image-container img{
+    width: 90vw;
+    height: auto;
+  }
+  .faq-item{
+    width: 100vw;
+  }
+  
+}

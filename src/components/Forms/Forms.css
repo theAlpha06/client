@@ -1,0 +1,122 @@
+.login{
+    background-image: url(/public/images/bg8.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+}
+.login__container{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 4rem;
+    width: 30vw;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 -5px 10px rgb(192, 182, 182);
+    
+}
+
+.createnewact{
+    color: black;
+    font-size: 12px;
+}
+.createnewact:hover{
+    color: #5090cc;
+}
+
+.form__box{
+    width: 100%;
+    padding: 1rem;
+    
+    /* border: 2px solid rgb(59, 171, 206); */
+    border-radius: 1rem;
+}
+.form-control{
+    background-color: transparent;
+    border: none;
+}
+.signinup{
+    text-align: center;
+}
+.signradio{
+    display: flex;
+    margin: 0 40vw;
+}
+.signradio input{
+    height: 20px;
+}
+.primary-btn{
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+input{
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #5090cc;
+    background-color: transparent;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.title{
+    background-color: #5090cc;
+    color: white;
+    padding: 1rem 2rem  ;
+
+}
+
+@media screen and (max-width: 768px){
+    .login__container{
+        width: 90%;
+    }
+}
+
+
+/* Add this CSS to your existing Forms.css file or create a new CSS file */
+
+  
+  .form-control select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #5090cc;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    appearance: none;
+  }
+  
+  .form-control select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Adjust styles for options if needed */
+  .form-control select option {
+    font-size: 16px;
+  }
+  
+  /* Optional: Style for the label */
+  .form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 1100px){
+    .login__container{
+        width: 60%;
+    }
+  }
+  
